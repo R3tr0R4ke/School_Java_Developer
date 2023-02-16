@@ -1,7 +1,6 @@
-package Progettini;
 import java.util.Scanner;
 
-public class Esercizio {
+public class miniCollezionatore {
     public static void main (String [] args)
     {
         //Scanner per il numero da inserire
