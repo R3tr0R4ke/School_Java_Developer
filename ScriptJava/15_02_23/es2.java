@@ -1,4 +1,3 @@
-package Progettini;
 import java.util.Scanner;
 
 public class es2 

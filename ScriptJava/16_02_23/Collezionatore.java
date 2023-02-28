@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class controllori {
+public class Collezionatore {
     public static void main(String [] args)
     {
         //Scanner per la scelta dello script

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class esFibonacci {
+public class fibonacci {
     
     public static void main (String [] args)
     {
@@ -26,7 +26,7 @@ public class esFibonacci {
                         System.out.print("Inserisci quanti numeri vuoi stampare: ");
                         int numero = myNumero.nextInt();
                         //Richiamo il metodo fibonacci
-                        fibonacci(numero);
+                        Fibonacci(numero);
                         //Esco dal ciclo
                         primaScelta = true;
                         break;
@@ -99,7 +99,7 @@ public class esFibonacci {
         }
     }
 
-    public static void fibonacci(int n)
+    public static void Fibonacci(int n)
     {
         int num1 = 0, num2 = 1;
         int counter = 0;

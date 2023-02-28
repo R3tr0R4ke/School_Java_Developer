@@ -24,19 +24,16 @@ public class miniCollezionatore {
         if (quest == "cane" || quest == "Cane")
         {
             System.out.println("Anche a me piacciono i cani!!!");
-            Boolean datoBool = true;
             myQuest.close();
         }
         else if (quest == "gatto" || quest == "Gatto")
         {
             System.out.println("Cing Cong, è pronto il piatto!!!");
-            Boolean datoBool = true;
             myQuest.close();
         }
         if (!quest.equals("gatto") && !quest.equals("Gatto") && !quest.equals("cane") && !quest.equals("Cane"))
         {
             System.out.println("Hai sbagliato a scrivere, riavvia il programma!!!");
-            Boolean datoBool = false;
             myQuest.close(); 
             System.exit(0);
         }

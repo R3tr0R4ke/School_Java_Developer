@@ -81,6 +81,7 @@ public class contoMenu
         System.out.print(" Benvenuto" + nome +"!!!\n");
         
         menuSecondario();
+        myNomi.close();
     }
     //MenuùSecondario, riporta ad altri menù in base all'input inserito
     public static void menuSecondario()
