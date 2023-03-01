@@ -1,3 +1,4 @@
+package Costruttori;
 public class Utenti 
 {
     public static String nomeUtente;

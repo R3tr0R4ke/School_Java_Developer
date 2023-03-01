@@ -1,3 +1,4 @@
+package Costruttori;
 
 public class Piatto 
 {
@@ -10,10 +11,6 @@ public class Piatto
     {
         nomePiatto = nome;
         prezzoPiatto = prezzo;
-        tipoPiatto = tipo;
-        
+        tipoPiatto = tipo;  
     }
-
-    
-
 }

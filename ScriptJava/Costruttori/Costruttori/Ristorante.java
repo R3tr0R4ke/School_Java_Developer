@@ -1,9 +1,5 @@
-import java.security.PublicKey;
+package Costruttori;
 import java.util.Scanner;
-
-import Costruttori.Piatto;
-import Costruttori.Utenti;
-import Costruttori.Conto;
 
 public class Ristorante 
 {
