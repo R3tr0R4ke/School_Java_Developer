@@ -24,6 +24,11 @@ public class Biblioteca {
         this.nomeLibro = nomeLibro;
     }
 
+    public String getLibro ()
+    {
+        return nomeLibro;
+    }
+
     public void setNomeLibro ()
     {
         nomeLibro = input.nextLine();
@@ -46,10 +51,4 @@ public class Biblioteca {
         numCopie = 0;
         copiePrestate = 0;
     }
-
-    public String getLibro ()
-    {
-        return nomeLibro;
-    }
-    
 }

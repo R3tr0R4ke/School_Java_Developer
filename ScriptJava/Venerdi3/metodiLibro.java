@@ -11,6 +11,7 @@ public class metodiLibro {
     static Biblioteca LibroQuinto = new Biblioteca(null, 0, 0);
 
     static Scanner myInput = new Scanner(System.in);
+    static Scanner myAggiunta = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("BENVENUTO/A NEL PROGRAMMA");
@@ -87,15 +88,13 @@ public class metodiLibro {
             else if (primaScelta == 3) {
                 // TODO:controllo di un libro già inserito
                 aggiungiLibro4();
-                Scanner myAggiunta = new Scanner(System.in);
-
+                
                 System.out.print("\nVuoi aggiungere un altro libro? (si / no): ");
                 String sceltaAggiunta = myAggiunta.nextLine();
 
                 if (sceltaAggiunta.equalsIgnoreCase("si")) {
                     aggiungiLibro5();
                 }
-                myAggiunta.close();
             }
             // Rimuovi Libro
             else if (primaScelta == 4) {
