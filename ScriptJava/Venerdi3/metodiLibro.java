@@ -37,7 +37,7 @@ public class metodiLibro {
                             System.out.println("Copie Libro finite...");
                         } else {
                             System.out.println("LIBRO PRESO!!!");
-                            prestaLibro1();
+                            LibroPrimo.prestaLibro();
                         }
                         libroScelto = true;
                     } else if (secondaScelta == 2) {
@@ -45,7 +45,7 @@ public class metodiLibro {
                             System.out.println("Copie Libro finite...");
                         } else {
                             System.out.println("LIBRO PRESO!!!");
-                            prestaLibro2();
+                            LibroSecondo.prestaLibro();
                         }
                         libroScelto = true;
                     } else if (secondaScelta == 3) {
@@ -53,7 +53,7 @@ public class metodiLibro {
                             System.out.println("Copie Libro finite...");
                         } else {
                             System.out.println("LIBRO PRESO!!!");
-                            prestaLibro3();
+                            LibroTerzo.prestaLibro();
                         }
                         libroScelto = true;
                     } else if (secondaScelta == 4) {
@@ -61,7 +61,7 @@ public class metodiLibro {
                             System.out.println("Copie Libro finite...");
                         } else {
                             System.out.println("LIBRO PRESO!!!");
-                            prestaLibro4();
+                            LibroQuarto.prestaLibro();
                         }
                         libroScelto = true;
                     } else if (secondaScelta == 5) {
@@ -69,7 +69,7 @@ public class metodiLibro {
                             System.out.println("Copie Libro finite...");
                         } else {
                             System.out.println("LIBRO PRESO!!!");
-                            prestaLibro5();
+                            LibroQuinto.prestaLibro();
                         }
                         libroScelto = true;
                     } else if (secondaScelta >= 6) {
@@ -150,6 +150,7 @@ public class metodiLibro {
                 rimuoviLibro();
                 break;
         }
+        myRimuovi.close();
     }
 
     public static void aggiungiLibro4() {
@@ -212,40 +213,5 @@ public class metodiLibro {
                 Restituisci();
                 break;
         }
-    }
-
-    // Decrementa numCopie, incrementa copiePrestate
-    public static void prestaLibro1() {
-        // Decremento copie primo libro
-        LibroPrimo.numCopie--;
-        LibroPrimo.copiePrestate++;
-    }
-
-    // Decrementa numCopie, incrementa copiePrestate
-    public static void prestaLibro2() {
-        // Decremento copie primo libro
-        LibroPrimo.numCopie--;
-        LibroPrimo.copiePrestate++;
-    }
-
-    // Decrementa numCopie, incrementa copiePrestate
-    public static void prestaLibro3() {
-        // Decremento copie primo libro
-        LibroPrimo.numCopie--;
-        LibroPrimo.copiePrestate++;
-    }
-
-    // Decrementa numCopie, incrementa copiePrestate
-    public static void prestaLibro4() {
-        // Decremento copie primo libro
-        LibroPrimo.numCopie--;
-        LibroPrimo.copiePrestate++;
-    }
-
-    // Decrementa numCopie, incrementa copiePrestate
-    public static void prestaLibro5() {
-        // Decremento copie primo libro
-        LibroPrimo.numCopie--;
-        LibroPrimo.copiePrestate++;
     }
 }

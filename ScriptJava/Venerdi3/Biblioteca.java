@@ -34,6 +34,12 @@ public class Biblioteca {
         numCopie = input.nextInt();
     }
 
+    public void prestaLibro ()
+    {
+        numCopie --;
+        copiePrestate ++;
+    }
+
     public void rimuoviLibro ()
     {
         nomeLibro = null;
@@ -45,5 +51,5 @@ public class Biblioteca {
     {
         return nomeLibro;
     }
-
+    
 }
