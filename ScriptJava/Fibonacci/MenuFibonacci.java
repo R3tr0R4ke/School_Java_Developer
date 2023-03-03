@@ -28,7 +28,7 @@ public class MenuFibonacci {
                     System.out.print("\n");
                     // Esco dal ciclo
                     primaScelta = false;
-                    break;
+                break;
 
                 case 2:
                     // Chiedo di inserire il numero in input
@@ -65,7 +65,6 @@ public class MenuFibonacci {
                             System.out.println("Inserimento errato, ritorno al calcolo del numero...");
                             break;
                     }
-
                     break;
 
                 case 3:
