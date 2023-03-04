@@ -78,7 +78,6 @@ public class accountArray {
                             //Torno al menu principale una volta uscito dall'if-else
                         }
                     break;
-                    
                     //Se la scelta del menu principale è la quarta
                     case 4:
                         System.out.print("\nInserisci il nome o cognome account da cercare: ");

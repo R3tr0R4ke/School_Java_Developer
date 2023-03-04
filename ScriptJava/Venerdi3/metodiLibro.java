@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class metodiLibro {
 
-    static Biblioteca LibroPrimo = new Biblioteca("Geronimo Stilton", 15, 0);
-    static Biblioteca LibroSecondo = new Biblioteca("KaliGuide", 5, 0);
+    static Biblioteca LibroPrimo = new Biblioteca("Hakuna Matata", 15, 0);
+    static Biblioteca LibroSecondo = new Biblioteca("ragazzi sono", 5, 0);
     static Biblioteca LibroTerzo = new Biblioteca("CiccioGamer89", 5, 0);
     static Biblioteca LibroQuarto = new Biblioteca(null, 0, 0);
     static Biblioteca LibroQuinto = new Biblioteca(null, 0, 0);
@@ -18,16 +18,12 @@ public class metodiLibro {
         boolean terminaProg = false;
 
         do {
-            System.out.print(
-                    "\nChe operazione vuoi eseguire?\n1: Prendi\n2: Restituisci\n3: Aggiungi\n4: Rimuovi\n5: Termina\nInserisci scelta: ");
+            System.out.print("\nChe operazione vuoi eseguire?\n1: Prendi\n2: Restituisci\n3: Aggiungi\n4: Rimuovi\n5: Termina\nInserisci scelta: ");
             int primaScelta = myInput.nextInt();
 
             // Prendi un libro in prestito
             if (primaScelta == 1) {
-                System.out.print("\nQuale libro desideri prendere?\n1: " + LibroPrimo.getLibro() + "\n2: "
-                        + LibroSecondo.getLibro()
-                        + "\n3: " + LibroTerzo.getLibro() + "\n4: " + LibroQuarto.getLibro() + "\n5: "
-                        + LibroQuinto.getLibro() + "\nInserisci scelta: ");
+                System.out.print("\nQuale libro desideri prendere?\n1: " + LibroPrimo.getLibro() + "\n2: " + LibroSecondo.getLibro() + "\n3: " + LibroTerzo.getLibro() + "\n4: " + LibroQuarto.getLibro() + "\n5: " + LibroQuinto.getLibro() + "\nInserisci scelta: ");
                 int secondaScelta = myInput.nextInt();
 
                 boolean libroScelto = false;

@@ -10,7 +10,6 @@ public class arrayECicli {
             {
                 System.out.print(i + " ");
                 System.out.println(j);
-                
             }
             break;
         }

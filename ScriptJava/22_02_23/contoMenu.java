@@ -129,8 +129,6 @@ public class contoMenu
     {
         Scanner myScelta6 = new Scanner(System.in);
 
-
-
         System.out.print("\nVuoi modificare un piatto o eliminarne uno o aggiungerne uno?\n1: Modifica piatto\n2: Elimina piatto\n3: Aggiungi piatto\n4: Indietro\nInserisci scelta: ");
         int scelta6 = myScelta6.nextInt();
 
