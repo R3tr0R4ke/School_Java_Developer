@@ -19,11 +19,7 @@ public class Anfibi
     {
         Anfibi.nomiAnfibiList.add(nome);
     }
-    //Ritorna il nome di un singolo felino a dato indice
-    public static String getNomeAnfibio (int index)
-    {
-        return nomiAnfibiList.get(index);
-    }
+    
     //Ritorna il nome di tutti i felini
     public static ArrayList<String> getNomiAnfibi ()
     {

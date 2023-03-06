@@ -19,11 +19,7 @@ public class Canidi
     {
         Canidi.nomiCanidiList.add(nome);
     }
-    //Ritorna il nome di un singolo felino a dato indice
-    public static String getNomeCanide (int index)
-    {
-        return nomiCanidiList.get(index);
-    }
+    
     //Ritorna il nome di tutti i felini
     public static ArrayList<String> getNomiCanidi ()
     {

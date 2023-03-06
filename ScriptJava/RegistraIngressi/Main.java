@@ -18,18 +18,6 @@ public class Main
             switch (sceltaMenuPinrcipale) 
             {
                 case 1:
-                    System.out.println("\nI nomi dei Felini sono: " + Felini.getNomiFelini());
-                    System.out.println("I felini totali sono: " + Felini.getNumFelini());
-
-                    System.out.println("\nI nomi dei Canidi sono: " + Canidi.getNomiCanidi());
-                    System.out.println("I canidi totali sono: " + Canidi.getNumCanidi());
-
-                    System.out.println("\nI nomi degli Anfibi sono: " + Anfibi.getNomiAnfibi());
-                    System.out.println("Gli anfibi totali sono: " + Anfibi.getNumAnfibi());
-
-                    System.out.println("\nI nomi dei Roditori sono: " + Roditori.getNomiRoditori());
-                    System.out.println("I roditori totali sono: " + Roditori.getNumRoditori());
-
                     Registratore.stampaTotAnimali();
                     termina = true;
                 break;

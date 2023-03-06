@@ -19,11 +19,7 @@ public class Roditori
     {
         Roditori.nomiRoditoriList.add(nome);
     }
-    //Ritorna il nome di un singolo felino a dato indice
-    public static String getNomeRoditore (int index)
-    {
-        return nomiRoditoriList.get(index);
-    }
+    
     //Ritorna il nome di tutti i felini
     public static ArrayList<String> getNomiRoditori ()
     {

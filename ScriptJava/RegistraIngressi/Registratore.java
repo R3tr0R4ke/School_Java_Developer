@@ -17,6 +17,18 @@ public class Registratore
 
     public static void stampaTotAnimali ()
     {
+        System.out.println("\nI nomi dei Felini sono: " + Felini.getNomiFelini());
+        System.out.println("I felini totali sono: " + Felini.getNumFelini());
+
+        System.out.println("\nI nomi dei Canidi sono: " + Canidi.getNomiCanidi());
+        System.out.println("I canidi totali sono: " + Canidi.getNumCanidi());
+
+        System.out.println("\nI nomi degli Anfibi sono: " + Anfibi.getNomiAnfibi());
+        System.out.println("Gli anfibi totali sono: " + Anfibi.getNumAnfibi());
+
+        System.out.println("\nI nomi dei Roditori sono: " + Roditori.getNomiRoditori());
+        System.out.println("I roditori totali sono: " + Roditori.getNumRoditori());
+
         totAnimali = Felini.getNumFelini() + Canidi.getNumCanidi() + Anfibi.getNumAnfibi() + Roditori.getNumRoditori();
         System.out.println("\nIl numero totale di animali è: " + totAnimali);
     }
@@ -41,24 +53,24 @@ public class Registratore
             case 2:
                 System.out.print("\nInserisci il nome del canide: ");
                 String nomeCanide = myInserimento.nextLine();
-                Felini.setNomeFelino(nomeCanide);
-                Felini.setNumFelini();
+                Canidi.setNomeCanide(nomeCanide);
+                Canidi.setNumCanidi();
                 Main.main(null);
             break;
             //Anfibi
             case 3:
                 System.out.print("\nInserisci il nome del anfibio: ");
                 String nomeAnfibio = myInserimento.nextLine();
-                Felini.setNomeFelino(nomeAnfibio);
-                Felini.setNumFelini();
+                Anfibi.setNomeAnfibio(nomeAnfibio);
+                Anfibi.setNumAnfibi();
                 Main.main(null);
             break;
             //Roditore
             case 4:
                 System.out.print("\nInserisci il nome del roditore: ");
                 String nomeRoditore = myInserimento.nextLine();
-                Felini.setNomeFelino(nomeRoditore);
-                Felini.setNumFelini();
+                Roditori.setNomeRoditore(nomeRoditore);
+                Roditori.setNumRoditori();
                 Main.main(null);
             break;
             //Inserimento errato, riporto al menù principale
