@@ -32,8 +32,7 @@ public class MenuFibonacci {
 
                 case 2:
                     // Chiedo di inserire il numero in input
-                    System.out.print(
-                            "\nInserisci un numero e ti dirò fino a quale numero della serie di fibonacci equivale: ");
+                    System.out.print("\nInserisci un numero e ti dirò fino a quale numero della serie di fibonacci equivale: ");
                     int num = myNumero.nextInt();
 
                     // Assegno il risultato del metodo caclFibonacci a risultato
