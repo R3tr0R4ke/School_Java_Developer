@@ -2,7 +2,7 @@ package School_Java_Developer.ScriptJava.RegistraIngressi;
 
 import java.util.ArrayList;
 
-public class Canidi 
+public class Canidi extends Animale
 {
     private static ArrayList<String> nomiCanidiList = new ArrayList<>();
     private static int numeroCanidi = 0;

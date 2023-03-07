@@ -2,7 +2,7 @@ package School_Java_Developer.ScriptJava.RegistraIngressi;
 
 import java.util.ArrayList;
 
-public class Felini 
+public class Felini extends Animale
 {
     //Dichiaro private l'ArraList e il contatore in modo da poterli utilizzare solo con i getter e setter
     private static ArrayList<String> nomiFeliniList = new ArrayList<>();

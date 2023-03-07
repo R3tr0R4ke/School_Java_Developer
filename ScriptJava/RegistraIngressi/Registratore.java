@@ -8,6 +8,7 @@ public class Registratore
 
     static Scanner mySceltaAnimale = new Scanner(System.in);
     static Scanner myInserimento = new Scanner(System.in);
+    static Scanner myVerso = new Scanner(System.in);
 
     public Registratore (int totAnimali)
     {
@@ -47,6 +48,8 @@ public class Registratore
 
                 Felini.setNomeFelino(nomeFelino);
                 Felini.setNumFelini();
+                stampaVersoFelino();
+
                 Main.main(null);
             break;
             //Canidi
@@ -55,6 +58,8 @@ public class Registratore
                 String nomeCanide = myInserimento.nextLine();
                 Canidi.setNomeCanide(nomeCanide);
                 Canidi.setNumCanidi();
+                stampaVersoCanide();
+
                 Main.main(null);
             break;
             //Anfibi
@@ -63,6 +68,8 @@ public class Registratore
                 String nomeAnfibio = myInserimento.nextLine();
                 Anfibi.setNomeAnfibio(nomeAnfibio);
                 Anfibi.setNumAnfibi();
+                stampaVersoAnfibio();
+
                 Main.main(null);
             break;
             //Roditore
@@ -71,6 +78,8 @@ public class Registratore
                 String nomeRoditore = myInserimento.nextLine();
                 Roditori.setNomeRoditore(nomeRoditore);
                 Roditori.setNumRoditori();
+                stampaVersoRoditore();
+
                 Main.main(null);
             break;
             //Inserimento errato, riporto al menù principale
@@ -79,5 +88,37 @@ public class Registratore
                 Main.main(null);
             break;
         } 
+    }
+
+    public static void stampaVersoAnfibio()
+    {
+        System.out.print("\nInserisci il verso del Anfibio: ");
+        String verso = myVerso.nextLine();
+
+        Anfibi.versoAnimale(verso);
+    }
+
+    public static void stampaVersoFelino()
+    {
+        System.out.print("\nInserisci il verso del Anfibio: ");
+        String verso = myVerso.nextLine();
+
+        Felini.versoAnimale(verso);
+    }
+
+    public static void stampaVersoCanide()
+    {
+        System.out.print("\nInserisci il verso del canide: ");
+        String verso = myVerso.nextLine();
+
+        Canidi.versoAnimale(verso);
+    }
+
+    public static void stampaVersoRoditore()
+    {
+        System.out.print("\nInserisci il verso del roditore: ");
+        String verso = myVerso.nextLine();
+
+        Roditori.versoAnimale(verso);
     }
 }

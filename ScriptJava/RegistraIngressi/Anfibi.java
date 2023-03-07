@@ -2,7 +2,7 @@ package School_Java_Developer.ScriptJava.RegistraIngressi;
 
 import java.util.ArrayList;
 
-public class Anfibi 
+public class Anfibi extends Animale
 {
     private static ArrayList<String> nomiAnfibiList = new ArrayList<>();
     private static int numeroAnfibi = 0;
@@ -34,5 +34,5 @@ public class Anfibi
     public static int getNumAnfibi ()
     {
         return numeroAnfibi;
-    }    
+    } 
 }
