@@ -22,7 +22,7 @@ public class MenuFibonacci {
 
                     for (int i = 0; i <= numero; i++) {
                         // Richiamo il metodo fibonacci
-                        int numeroFibonacci = serieFibonacci(i);
+                        int numeroFibonacci = MetodiFibonacci.serieFibonacci(i);
                         System.out.print(" " + numeroFibonacci);
                     }
                     System.out.print("\n");
@@ -37,7 +37,7 @@ public class MenuFibonacci {
                     int num = myNumero.nextInt();
 
                     // Assegno il risultato del metodo caclFibonacci a risultato
-                    int risultato = calcFibonacci(num);
+                    int risultato = MetodiFibonacci.calcFibonacci(num);
                     // Mostro il risultato e richiedo se si vuole trovare un altro numero o
                     // terminare il programma
                     System.out.println(
@@ -78,30 +78,8 @@ public class MenuFibonacci {
                     break;
             }
         } while (primaScelta == false);
-
         // Chiudo gli scanner
         myNumero.close();
         myScelta.close();
-    }
-
-    // Metodo per trovare il numero nella serie di fibonacci in base al numero
-    // inserito
-    public static int calcFibonacci(int num) {
-        // Condizione per il numero 0 e 1
-        if (0 == num || 1 == num) {
-            // Stampo semplicemente 0 o 1
-            return num;
-        } else {
-            // Trovo il numero di fibonacci
-            return calcFibonacci(num - 1) + calcFibonacci(num - 2);
-        }
-    }
-
-    public static int serieFibonacci(int n) {
-        if (n < 2) {
-            return n;
-        } else {
-            return serieFibonacci(n - 1) + serieFibonacci(n - 2);
-        }
     }
 }
