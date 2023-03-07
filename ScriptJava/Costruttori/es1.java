@@ -7,23 +7,20 @@ public class es1
 
     public static void main (String [] args)
     {
-        es1 myObj1 = new es1();
-        es1 myObj2 = new es1();
-
         Scanner myNum = new Scanner(System.in);
         System.out.print("Inserisci numero: ");
         x = myNum.nextInt();
 
-        System.out.println(myObj1.x);
+        System.out.println(es1.x);
         if (x > 50)
         {
-            myObj2.y = true;
-            System.out.println(myObj2.y);
+            es1.y = true;
+            System.out.println(es1.y);
         }
         else
         {
-            myObj2.y = false;
-            System.out.println(myObj2.y);
+            es1.y = false;
+            System.out.println(es1.y);
         }
 
         myNum.close();

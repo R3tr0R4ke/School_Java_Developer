@@ -5,9 +5,9 @@ import java.util.UUID;
 
 public class Utente 
 {
-    private static String nomeUtente;
-    private static String passwordUtente; 
-    private static double budgetUtente;
+    private String nomeUtente;
+    private String passwordUtente; 
+    private double budgetUtente;
     private UUID id;
 
     public Utente (String nome, String password)
