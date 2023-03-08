@@ -46,7 +46,6 @@ public class ConnectionView
                 String district = myScanner.nextLine();
 
                 boolean cittaEsistente = false;
-                Boolean regioneEsistente = false;
                 rs.beforeFirst();
 
                 while (rs.next())
@@ -57,12 +56,11 @@ public class ConnectionView
                     if (cittaVista.equalsIgnoreCase(nomeCittà) && regioneVista.equalsIgnoreCase(regioneVista))
                     {
                         cittaEsistente = true;
-                        regioneEsistente = true;
                         break;
                     } 
                 }
 
-                if (cittaEsistente && regioneEsistente)
+                if (cittaEsistente)
                 {
                     System.out.println("\nLa città esiste già nella tabella");
                 }
