@@ -8,6 +8,5 @@ public class Main
         ConnectionView connessione = new ConnectionView("jdbc:mysql://localhost:3306/world", "root", "root");
         
         connessione.CreaConnessione();
-        
     }
 }

@@ -23,7 +23,7 @@ public class ConnectionView
             Connection conn;
             conn = DriverManager.getConnection(myUrl, myUser, myPassword);
 
-            System.out.println(conn == null ? "Connessione non riuscita" : "Connessione avvenuta" );
+            System.out.println(conn == null ? "Connessione non riuscita\n" : "Connessione avvenuta\n" );
 
             String query = "SELECT * FROM world.citta_italiane_view ";
             PreparedStatement stm = conn.prepareStatement(
