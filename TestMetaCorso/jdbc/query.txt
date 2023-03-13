@@ -1,0 +1,19 @@
+create table Autori (
+	NomePk varchar(30),
+    AnnoNascita date not null,
+    AnnoMorte date,
+    Nazione varchar(30) not null,
+    primary key (NomePk)
+);
+
+create table Libro (
+	Titolo varchar(50) not null,
+    AutoreFk varchar(30),
+    AnnoPubblicazione date not null,
+    primary key (Titolo),
+    foreign key (AutoreFk) references autori (NomePk)
+);
+
+SELECT * FROM biblioteca.autori;
+
+SELECT * FROM biblioteca.libro;
