@@ -50,7 +50,7 @@ public class Registratore
                 Felini.setNumFelini();
                 stampaVersoFelino();
 
-                Main.main(null);
+                ShapeManager.main(null);
             break;
             //Canidi
             case 2:
@@ -60,7 +60,7 @@ public class Registratore
                 Canidi.setNumCanidi();
                 stampaVersoCanide();
 
-                Main.main(null);
+                ShapeManager.main(null);
             break;
             //Anfibi
             case 3:
@@ -70,7 +70,7 @@ public class Registratore
                 Anfibi.setNumAnfibi();
                 stampaVersoAnfibio();
 
-                Main.main(null);
+                ShapeManager.main(null);
             break;
             //Roditore
             case 4:
@@ -80,12 +80,12 @@ public class Registratore
                 Roditori.setNumRoditori();
                 stampaVersoRoditore();
 
-                Main.main(null);
+                ShapeManager.main(null);
             break;
             //Inserimento errato, riporto al menù principale
             default:
                 System.out.println("\nInserimento erratto... Ti riporto al menù principale...");
-                Main.main(null);
+                ShapeManager.main(null);
             break;
         } 
     }
