@@ -7,7 +7,7 @@ public class MetodiMain {
     private static Scanner myInt = new Scanner(System.in);
     private static Scanner myDouble = new Scanner(System.in);
     // ArraList che contiene le figure inserite
-    private static ShapeManager shapeManagerList = new ShapeManager(null);
+    static ShapeManager shapeManagerList = new ShapeManager(null);
 
     public void MenuPrincipale() {
         System.out.print(
@@ -60,7 +60,7 @@ public class MetodiMain {
     public void CasoCerchio() {
         System.out.print("\nInserisci il raggio: ");
         double raggioInserito = myDouble.nextDouble();
-
+        
         // Creo un nuovo oggetto con il relativo raggio inserito in input
         Cerchio myCerchio = new Cerchio(raggioInserito);
         // Aggiungo all'arrayList l'oggetto myCerchio con il raggio inserito in input da
@@ -68,6 +68,7 @@ public class MetodiMain {
         shapeManagerList.addShape(myCerchio);
 
         System.out.println("\nIl cerchio è stato inserito");
+
         MenuPrincipale();
     }
 
